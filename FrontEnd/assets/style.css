@@ -1,0 +1,264 @@
+:root{
+    --forest-green:#01401C;
+    --caparol:#025920 ;
+    --HT: #8C6F4A;
+}
+@font-face {
+    font-family: "poppins";
+    src: url('font/Poppins-Regular.ttf');
+}
+
+
+/* ################### */
+ /* #######     ####### */
+ /* ###### reset ###### */
+ /* #######     ####### */
+ /* ################### */
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: "poppins";
+     vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
+     display: block;
+ }
+ body {
+     line-height: 1;
+ }
+ ol, ul {
+     list-style: none;
+ }
+ blockquote, q {
+     quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+     content: '';
+     content: none;
+ }
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################# */
+/* ##### other ##### */
+/* ################# */
+.title-acc{
+    text-shadow: 3px 1px 2px #025920;
+    font-size: 2rem;
+    width: 38%;
+    text-align: center;
+}
+.title-acc2{  
+    font-size: 1.5rem;
+}
+.search-city{
+    height: 42px;
+    width: 42rem;
+    width: 85%;
+    border-top-left-radius: 15px;
+    background-color: var(--HT);
+    
+}
+.search-btn{
+    width: 15%;
+    border-bottom-right-radius: 15px;
+    background: var(--forest-green);
+    font-size: 1.2rem;
+}
+
+.search{
+    border: none;
+    color: white;
+    opacity: calc(0.9);
+}
+.search:hover{
+    opacity: calc(1);
+    box-shadow: 0px 2px 16px 5px var(--HT);
+    transition: 600ms;
+}
+.card{
+    background-color: #000000;
+    width: 50%;
+    display: flex;
+}
+/* ### gestion placeholder ### */
+
+.search-city::placeholder {
+    color: white;
+    font-size: 1.5em;
+    
+  }
+
+.container{
+    padding-left: 21rem;
+    display: flex;
+    gap: 76px;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 9rem;
+    line-height: 40px;
+}
+.container1{
+    width:47%;
+    
+    
+}
+#form{
+    display: flex;
+    width: 100%;
+    
+}
+.svg{
+    width: 42px;
+    
+}
+.svg-user{
+    width: 30px;
+}
+
+#nav-barre{
+    margin-top: 3%;
+}
+body, a{
+    color: white;
+    font-family: "poppins";
+    text-decoration: none;
+
+}
+#aside-deco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+}
+#aside-deco a{
+    color: grey;
+}
+
+
+li{
+    list-style: none;
+}
+
+
+/* _______________________ */
+
+
+/* ######################### */
+/* ###### code nav bar ##### */
+/* ######################### */
+#ul-svg{
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.li-svg{
+    width: 5vw; 
+    height: 8vh;
+}
+
+
+/* _______________________ */
+/* ######################### */
+/* #### code 2nd nav bar ### */
+/* ######################### */
+#logo-site{
+    top: -50px;
+    position: absolute;
+    z-index: 1;
+    top: -244px;
+    right: -25px;
+    
+}
+
+#nav-barre-logo{ 
+    height: 5rem;
+    background: var(--caparol);
+}
+#nav-menu{
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+
+
+/* _______________________ */
+/* ######################## */
+/* ###### code aside ###### */
+/* ######################## */
+
+
+#left-nav{
+    background-color: var(--forest-green) ;
+    /* margin-top: -16px; */
+    width: 15vw;
+    height: 865px;
+    position: fixed;
+}
+
+#left-nav-page{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    height: 60%;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+
+/* _______________________ */
+/* ######################### */
+/* ####### Main page ####### */
+/* ######################### */
+#content{
+    margin:0;
+}
+#img-bg{
+    background-image: url(img/young-woman-pharmacist-at-pharmacy.jpg);
+    box-shadow: inset #000000 0px 15px 90px 9px;
+    height: 756px;
+    background-size: cover;
+    background-position-y: -115px;
+    background-repeat: no-repeat;
+ }
