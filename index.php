@@ -21,11 +21,11 @@ try {
                 require_once "BackEnd/App/Views/pharmaVilleView.php";
 
                 break;
-            case "Connexion":
+            case "connexion":
                 require_once "BackEnd/App/Views/connexionView.php";
                 // $userController->login();
 
-            case "Soigner":
+            case "soigner":
                 require_once "BackEnd/App/Views/search-m.php";
                 break;
                 // var_dump($url[0]) ;
@@ -39,11 +39,13 @@ try {
             case "ValiderInscription":
                 // $userController->InscrUser();
                 break;
-            case "Ordonnance":
+            case "ordonnance":
                 require_once "BackEnd/App/Views/ordonnance.php";
                 break;
             default:
+                require_once "BackEnd/App/Views/errorView.php";
                 throw new Exception('Error 404, page not found');
+                
         }
     }
 } catch (Exception $e) {

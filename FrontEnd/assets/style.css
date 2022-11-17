@@ -7,6 +7,10 @@
     font-family: "poppins";
     src: url('font/Poppins-Regular.ttf');
 }
+@font-face {
+    font-family: "poppins-bold";
+    src: url("font/Poppins-SemiBold.ttf");
+}
 
 
 /* ################### */
@@ -112,9 +116,31 @@
     transition: 600ms;
 }
 .card{
-    background-color: #000000;
-    width: 50%;
+    font-family: "poppins-bold";
+    width: 75%;
+    height: 461px;
     display: flex;
+    border: 2px solid var(--forest-green);
+    box-shadow: -2px 0px 22px 3px var(--forest-green);
+    position: relative;
+}
+#article-card{
+    display: flex;
+    padding-left: 24rem;
+    gap: 87px;
+    flex-direction: column;
+    color: #000000;
+}
+.leftcard{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#carte{
+    width: 68%;
+    margin: auto;
 }
 /* ### gestion placeholder ### */
 
@@ -182,16 +208,21 @@ li{
 /* ######################### */
 /* ###### code nav bar ##### */
 /* ######################### */
+.svg{
+    height: 40px;
+    width: 40px;
+}
 #ul-svg{
     
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 30px;
+    padding-bottom: 1rem;
 }
 
 .li-svg{
-    width: 5vw; 
-    height: 8vh;
+    
 }
 
 
@@ -215,25 +246,164 @@ li{
 #nav-menu{
     height: 5rem;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-card{
+    height: 100%;
+    border-radius: 71%;
+    object-fit: cover;
+    width: 100%;
+    transition: all ease 500ms;
+}
+#block-bg-img{
+    margin: 15px;
+    width: 25%;
+    height: 81%;
+    border-radius: 50px;
+    border: 1px solid;
+    border: 1px solid var(--caparol);
+    transition: all ease 500ms;
+    
+    
+}
+#block-bg-img:hover{
+    border-color: white;
     
 }
 
-
-
+.img-card:hover{
+    border: 10px var(--caparol);
+    box-shadow: -6px -7px 50px 2px var(--caparol);
+    
+    
+    
+}
+#test{
+    display: flex;
+    gap: 15px;
+    height: 26%;
+    align-items: center;
+}
+#test2{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+#test3{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
 /* _______________________ */
 /* ######################## */
 /* ###### code aside ###### */
 /* ######################## */
-
-
+.Fav-replay{
+    height: 2rem;
+}
+#replay-like{
+    position: absolute;
+    right: 0;
+}
 #left-nav{
     background-color: var(--forest-green) ;
     /* margin-top: -16px; */
     width: 15vw;
     height: 865px;
     position: fixed;
+}
+#note-svg{
+    height: 60%;
+}
+#hr{
+    width: 75%;
+    height: 3%;
+    background-color: var(--forest-green);
+}
+#filtre{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#ul-filtre{
+    display: flex;
+    gap: 123px;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+}
+.fil{
+    margin-top: -1rem;
+    border-radius: 0 25px 25px 0 !important;
+    height: 3rem !important;
+    padding-top: 2rem !important;
+}
+#right-card{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#accueil-ordo{
+    padding-left: 25%;
+    padding-top: 8%;
+    display: flex;
+    gap: 80px;
+    height: 100%;
+}
+#ordo{
+    width: 31%;
+    height: 34rem;
+    border: 2px solid var(--caparol);
+    color: black;
+    text-align: center;
+    background-color: #c9c8c8;
+}
+#text-ordo{
+    width: 54%;
+    height: 100%;
+    color: #000000;
+}
+#svg-ordo{
+    height: 70%;
+    padding-top: 3rem;
+}
+.file{
+    padding: 1rem;
+}
+.top{
+    border: 1px solid;
+    height: 2rem;
+    text-align: center;
+    width: 10rem;
+    padding-top: 1rem;
+    border-radius: 39px;
+}
+#calendrier{
+    color: #000000;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#block-note{
+    padding-top: 10%;
+}
+#calen-placement{
+    height: 54%;
+}
+
+#border-cal{
+    height: 98%;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 0px 0px 25px 25px;
+}
+#text{
+    text-align: center;
+    width: 90%;
 }
 
 #left-nav-page{
@@ -245,6 +415,9 @@ li{
     margin: 1rem;
 }
 
+.card a{
+    color: #000000;
+}
 
 
 /* _______________________ */
@@ -262,3 +435,38 @@ li{
     background-position-y: -115px;
     background-repeat: no-repeat;
  }
+
+ /* page error */
+#accueil-error{
+    color: black;
+    text-align: center;
+    padding-left: 15%;
+    padding-top: 10%;
+}
+#h2-error{
+    font-size: 10rem;
+    padding-bottom: 1%;
+    color: var(--caparol);
+}
+.text-error {
+    font-size: 1.5rem;
+}
+#btn-acc{
+    border-radius: 25px;
+    height: 3rem;
+    width: 8rem;
+    background-color: var(--caparol);
+    color: white;
+    border: 1px solid;
+    margin-top: 1rem;
+    font-family: "poppins";
+    transition: all ease 500ms;
+}
+#btn-acc:hover{
+    background-color: var(--forest-green);
+    margin-top: 0rem;
+    padding-top: 0rem ;
+    height: 5rem;
+    width: 9rem;
+    font-size: 1rem;
+}

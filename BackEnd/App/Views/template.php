@@ -12,20 +12,20 @@
         
         <nav id="nav-barre">
             <ul id="ul-svg">
-                <li class="li-svg">
+                <li class="svg-flag">
                     <!-- Drapeau pour la langue -->
                     <img src="FrontEnd/assets/img/union-europeenne.png" class="svg svg-flag" alt="">
                     
                 </li>
-                <li class="li-svg">
+                <li class="svg-acc">
                     <!-- Svg Compte -->
-                    <img src="FrontEnd/assets/img/utilisateur.png" class="svg svg-user"alt="">
+                    <img src="FrontEnd/assets/img/account_circle_FILL0_wght400_GRAD0_opsz48.svg" class="svg svg-user"alt="">
                     <div id="display-none displayNoneAnim"></div>
                     
                 </li>
-                <li class="li-svg">
+                <li class="svg-basket">
                     <!-- Le Panier -->
-                    
+                    <img src="FrontEnd/assets/img/shopping_basket_FILL0_wght400_GRAD0_opsz48.svg" class="svg" alt="">
                     
                 </li>
             </ul>
@@ -36,14 +36,17 @@
                     <a href="">Commander !</a>
                 </li>
                 <li>
-                    <a href=""></a>
+                    <a href="ville">Pharmaville</a>
                 </li>
                 <li>
-                    <a href=""></a>
+                    <a href="ordonnance">Ordonnance</a>
                 </li>
                 <li>
 
-                    <a href=""></a>
+                    <a href="accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="connexion">Se connecter</a>
                 </li>
             </ul>
         </div> </a>
