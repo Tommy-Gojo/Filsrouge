@@ -169,6 +169,17 @@
     width: 100%;
     
 }
+#accueil-connexion{
+    padding-left: 25%;
+    padding-top: 8%;
+    color: black;
+}
+#Inscr{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+}
 .svg{
     width: 42px;
     

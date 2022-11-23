@@ -1,11 +1,15 @@
 <?php
+
 session_start();
 
-require "vendor/autoload.php";
+require_once "vendor/autoload.php";
+
+use BackEnd\App\Controllers\UserController;
 
 
 define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? " https" : "http") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF']));
 
+$userController =  new UserController();
 
 try {
     if (empty($_GET['page'])) {
@@ -23,8 +27,8 @@ try {
                 break;
             case "connexion":
                 require_once "BackEnd/App/Views/connexionView.php";
-                // $userController->login();
-
+                $userController->login();
+                break;
             case "soigner":
                 require_once "BackEnd/App/Views/search-m.php";
                 break;
@@ -34,10 +38,10 @@ try {
                 // var_dump($url[0]) ;
                 break;
             case "Inscription":
-                // require_once "App/Views/inscriptionView.php";
-                // break;
+                require_once "BackEnd/App/Views/inscriptionView.php";
+                break;
             case "ValiderInscription":
-                // $userController->InscrUser();
+                $userController->InscrUser();
                 break;
             case "ordonnance":
                 require_once "BackEnd/App/Views/ordonnance.php";

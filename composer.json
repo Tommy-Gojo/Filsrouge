@@ -2,7 +2,7 @@
     "name": "tommy/back-end",
     "autoload": {
         "psr-4": {
-            "App\\":"App/"
+            "BackEnd\\App\\":"BackEnd/App/"
         }
     },
     "require": {}

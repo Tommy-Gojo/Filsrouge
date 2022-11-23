@@ -33,6 +33,9 @@
         <div id="nav-barre-logo">
             <ul id="nav-menu">
                 <li>
+                    <p><?php var_dump($_SESSION['userConnected'])?></p>
+                </li>
+                <li>
                     <a href="">Commander !</a>
                 </li>
                 <li>
