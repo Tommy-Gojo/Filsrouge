@@ -15,7 +15,6 @@
                 <li class="svg-flag">
                     <!-- Drapeau pour la langue -->
                     <img src="FrontEnd/assets/img/union-europeenne.png" class="svg svg-flag" alt="">
-                    
                 </li>
                 <li class="svg-acc">
                     <!-- Svg Compte -->
@@ -33,13 +32,13 @@
         <div id="nav-barre-logo">
             <ul id="nav-menu">
                 <li>
-                    <p><?php var_dump($_SESSION['userConnected'])?></p>
-                </li>
-                <li>
-                    <a href="">Commander !</a>
+                    <a href="">Commander</a>
                 </li>
                 <li>
                     <a href="ville">Pharmaville</a>
+                </li>
+                <li class="menu-burger">
+                    <!-- menu burger js -->
                 </li>
                 <li>
                     <a href="ordonnance">Ordonnance</a>
@@ -48,15 +47,15 @@
 
                     <a href="accueil">Accueil</a>
                 </li>
-                <li>
-                    <a href="connexion">Se connecter</a>
-                </li>
+                <!-- <li>
+                    <a href="connexion">Inscirption</a>
+                </li> -->
             </ul>
-        </div> </a>
+        </div> 
     </header>
     <main id="bg-img">
-        <aside id="left-nav">
-            <img src="FrontEnd/assets/img/imgEPharma.png" alt="Image du site" id="logo-site">
+        <aside id="left-nav" class="dp-none">
+            <img src="FrontEnd/assets/img/imgEPharma.png" alt="Image du site" id="logo-site" >
             <ul id="left-nav-page">
                 <li><a href="">Professionnel De santé</a></li>
                 <li><a href="">Le Coté Soins</a></li>
@@ -73,5 +72,6 @@
         <?= $content ?> 
         </section>
     </main>
+    <script src="FrontEnd/assets/script.js"></script>
 </body>
 </html>

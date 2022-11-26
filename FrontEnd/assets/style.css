@@ -1,12 +1,14 @@
-:root{
-    --forest-green:#01401C;
-    --caparol:#025920 ;
+:root {
+    --forest-green: #01401C;
+    --caparol: #025920;
     --HT: #8C6F4A;
 }
+
 @font-face {
     font-family: "poppins";
     src: url('font/Poppins-Regular.ttf');
 }
+
 @font-face {
     font-family: "poppins-bold";
     src: url("font/Poppins-SemiBold.ttf");
@@ -14,53 +16,140 @@
 
 
 /* ################### */
- /* #######     ####### */
- /* ###### reset ###### */
- /* #######     ####### */
- /* ################### */
- html, body, div, span, applet, object, iframe,
- h1, h2, h3, h4, h5, h6, p, blockquote, pre,
- a, abbr, acronym, address, big, cite, code,
- del, dfn, em, img, ins, kbd, q, s, samp,
- small, strike, strong, sub, sup, tt, var,
- b, u, i, center,
- dl, dt, dd, ol, ul, li,
- fieldset, form, label, legend,
- table, caption, tbody, tfoot, thead, tr, th, td,
- article, aside, canvas, details, embed, 
- figure, figcaption, footer, header, hgroup, 
- menu, nav, output, ruby, section, summary,
- time, mark, audio, video {
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font-size: 100%;
-     font: "poppins";
-     vertical-align: baseline;
- }
- /* HTML5 display-role reset for older browsers */
- article, aside, details, figcaption, figure, 
- footer, header, hgroup, menu, nav, section {
-     display: block;
- }
- body {
-     line-height: 1;
- }
- ol, ul {
-     list-style: none;
- }
- blockquote, q {
-     quotes: none;
- }
- blockquote:before, blockquote:after,
- q:before, q:after {
-     content: '';
-     content: none;
- }
- table {
-     border-collapse: collapse;
-     border-spacing: 0;
- }
+/* #######     ####### */
+/* ###### reset ###### */
+/* #######     ####### */
+/* ################### */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: "poppins";
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 
 
@@ -81,41 +170,46 @@
 /* ################# */
 /* ##### other ##### */
 /* ################# */
-.title-acc{
+.title-acc {
     text-shadow: 3px 1px 2px #025920;
     font-size: 2rem;
     width: 38%;
     text-align: center;
 }
-.title-acc2{  
+
+.title-acc2 {
     font-size: 1.5rem;
 }
-.search-city{
+
+.search-city {
     height: 42px;
     width: 42rem;
     width: 85%;
     border-top-left-radius: 15px;
     background-color: var(--HT);
-    
+
 }
-.search-btn{
+
+.search-btn {
     width: 15%;
     border-bottom-right-radius: 15px;
     background: var(--forest-green);
     font-size: 1.2rem;
 }
 
-.search{
+.search {
     border: none;
     color: white;
     opacity: calc(0.9);
 }
-.search:hover{
+
+.search:hover {
     opacity: calc(1);
     box-shadow: 0px 2px 16px 5px var(--HT);
     transition: 600ms;
 }
-.card{
+
+.card {
     font-family: "poppins-bold";
     width: 75%;
     height: 461px;
@@ -124,33 +218,37 @@
     box-shadow: -2px 0px 22px 3px var(--forest-green);
     position: relative;
 }
-#article-card{
+
+#article-card {
     display: flex;
     padding-left: 24rem;
     gap: 87px;
     flex-direction: column;
     color: #000000;
 }
-.leftcard{
+
+.leftcard {
     width: 35%;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-#carte{
+
+#carte {
     width: 68%;
     margin: auto;
 }
+
 /* ### gestion placeholder ### */
 
 .search-city::placeholder {
     color: white;
     font-size: 1.5em;
-    
-  }
 
-.container{
+}
+
+.container {
     padding-left: 21rem;
     display: flex;
     gap: 76px;
@@ -159,56 +257,66 @@
     padding-top: 9rem;
     line-height: 40px;
 }
-.container1{
-    width:47%;
-    
-    
+
+.container1 {
+    width: 47%;
+
+
 }
-#form{
+
+#form {
     display: flex;
     width: 100%;
-    
+
 }
-#accueil-connexion{
+
+#accueil-connexion {
     padding-left: 25%;
     padding-top: 8%;
     color: black;
 }
-#Inscr{
+
+#Inscr {
     display: flex;
     flex-direction: column;
     width: 30%;
-    
+
 }
-.svg{
+
+.svg {
     width: 42px;
-    
+
 }
-.svg-user{
+
+.svg-user {
     width: 30px;
 }
 
-#nav-barre{
+#nav-barre {
     margin-top: 3%;
 }
-body, a{
+
+body,
+a {
     color: white;
     font-family: "poppins";
     text-decoration: none;
 
 }
-#aside-deco{
+
+#aside-deco {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 6rem;
 }
-#aside-deco a{
+
+#aside-deco a {
     color: grey;
 }
 
 
-li{
+li {
     list-style: none;
 }
 
@@ -219,12 +327,13 @@ li{
 /* ######################### */
 /* ###### code nav bar ##### */
 /* ######################### */
-.svg{
+.svg {
     height: 40px;
     width: 40px;
 }
-#ul-svg{
-    
+
+#ul-svg {
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -232,43 +341,46 @@ li{
     padding-bottom: 1rem;
 }
 
-.li-svg{
-    
-}
+.li-svg {}
 
 
 /* _______________________ */
 /* ######################### */
 /* #### code 2nd nav bar ### */
 /* ######################### */
-#logo-site{
-    top: -50px;
+#logo-site {
+
     position: absolute;
     z-index: 1;
-    top: -244px;
-    right: -25px;
-    
+    top: -243px;
+    right: -32px;
+    height: 39%;
+
 }
 
-#nav-barre-logo{ 
+#nav-barre-logo {
     height: 5rem;
     background: var(--caparol);
 }
-#nav-menu{
+
+#nav-menu {
+    width: 100%;
+    font-size: 1.3rem;
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.img-card{
+.img-card {
     height: 100%;
     border-radius: 71%;
     object-fit: cover;
     width: 100%;
     transition: all ease 500ms;
 }
-#block-bg-img{
+
+#block-bg-img {
     margin: 15px;
     width: 25%;
     height: 81%;
@@ -276,96 +388,111 @@ li{
     border: 1px solid;
     border: 1px solid var(--caparol);
     transition: all ease 500ms;
-    
-    
-}
-#block-bg-img:hover{
-    border-color: white;
-    
+
+
 }
 
-.img-card:hover{
+#block-bg-img:hover {
+    border-color: white;
+
+}
+
+.img-card:hover {
     border: 10px var(--caparol);
     box-shadow: -6px -7px 50px 2px var(--caparol);
-    
-    
-    
+
+
+
 }
-#test{
+
+#test {
     display: flex;
     gap: 15px;
     height: 26%;
     align-items: center;
 }
-#test2{
+
+#test2 {
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
-#test3{
+
+#test3 {
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
+
 /* _______________________ */
 /* ######################## */
 /* ###### code aside ###### */
 /* ######################## */
-.Fav-replay{
+.Fav-replay {
     height: 2rem;
 }
-#replay-like{
+
+#replay-like {
     position: absolute;
     right: 0;
 }
-#left-nav{
-    background-color: var(--forest-green) ;
+
+#left-nav {
+    background-color: var(--forest-green);
     /* margin-top: -16px; */
     width: 15vw;
-    height: 865px;
+    height: 883px;
     position: fixed;
 }
-#note-svg{
+
+#note-svg {
     height: 60%;
 }
-#hr{
+
+#hr {
     width: 75%;
     height: 3%;
     background-color: var(--forest-green);
 }
-#filtre{
+
+#filtre {
     color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-#ul-filtre{
+
+#ul-filtre {
     display: flex;
     gap: 123px;
     padding-bottom: 5rem;
     padding-top: 1rem;
 }
-.fil{
+
+.fil {
     margin-top: -1rem;
     border-radius: 0 25px 25px 0 !important;
     height: 3rem !important;
     padding-top: 2rem !important;
 }
-#right-card{
+
+#right-card {
     display: flex;
     width: 60%;
     flex-direction: column;
     justify-content: space-evenly;
 }
-#accueil-ordo{
+
+#accueil-ordo {
     padding-left: 25%;
     padding-top: 8%;
     display: flex;
     gap: 80px;
     height: 100%;
 }
-#ordo{
+
+#ordo {
     width: 31%;
     height: 34rem;
     border: 2px solid var(--caparol);
@@ -373,19 +500,23 @@ li{
     text-align: center;
     background-color: #c9c8c8;
 }
-#text-ordo{
+
+#text-ordo {
     width: 54%;
     height: 100%;
     color: #000000;
 }
-#svg-ordo{
+
+#svg-ordo {
     height: 70%;
     padding-top: 3rem;
 }
-.file{
+
+.file {
     padding: 1rem;
 }
-.top{
+
+.top {
     border: 1px solid;
     height: 2rem;
     text-align: center;
@@ -393,31 +524,35 @@ li{
     padding-top: 1rem;
     border-radius: 39px;
 }
-#calendrier{
+
+#calendrier {
     color: #000000;
     width: 100%;
     height: 100%;
     text-align: center;
 }
-#block-note{
+
+#block-note {
     padding-top: 10%;
 }
-#calen-placement{
+
+#calen-placement {
     height: 54%;
 }
 
-#border-cal{
+#border-cal {
     height: 98%;
     width: 90%;
     border: 1px solid;
     border-radius: 0px 0px 25px 25px;
 }
-#text{
+
+#text {
     text-align: center;
     width: 90%;
 }
 
-#left-nav-page{
+#left-nav-page {
     display: flex;
     flex-direction: column;
     gap: 38px;
@@ -426,7 +561,7 @@ li{
     margin: 1rem;
 }
 
-.card a{
+.card a {
     color: #000000;
 }
 
@@ -435,34 +570,38 @@ li{
 /* ######################### */
 /* ####### Main page ####### */
 /* ######################### */
-#content{
-    margin:0;
+#content {
+    margin: 0;
 }
-#img-bg{
+
+#img-bg {
     background-image: url(img/young-woman-pharmacist-at-pharmacy.jpg);
     box-shadow: inset #000000 0px 15px 90px 9px;
-    height: 756px;
+    height: 883px;
     background-size: cover;
     background-position-y: -115px;
     background-repeat: no-repeat;
- }
+}
 
- /* page error */
-#accueil-error{
+/* page error */
+#accueil-error {
     color: black;
     text-align: center;
     padding-left: 15%;
     padding-top: 10%;
 }
-#h2-error{
+
+#h2-error {
     font-size: 10rem;
     padding-bottom: 1%;
     color: var(--caparol);
 }
+
 .text-error {
     font-size: 1.5rem;
 }
-#btn-acc{
+
+#btn-acc {
     border-radius: 25px;
     height: 3rem;
     width: 8rem;
@@ -473,11 +612,142 @@ li{
     font-family: "poppins";
     transition: all ease 500ms;
 }
-#btn-acc:hover{
+
+#btn-acc:hover {
     background-color: var(--forest-green);
     margin-top: 0rem;
-    padding-top: 0rem ;
+    padding-top: 0rem;
     height: 5rem;
     width: 9rem;
     font-size: 1rem;
+}
+
+.menu-burger {
+    display: none;
+}
+
+
+/* ################## */
+/* ### Responsive ### */
+/* ################## */
+
+@media (min-width: 1920px) {
+    #left-nav-page {
+        height: 80%;
+
+        font-size: 1.5rem;
+    }
+
+    #nav-menu {
+        font-size: 1rem;
+    }
+
+    #left-nav {
+        width: 15%;
+    }
+
+}
+
+@media (max-width:1200px) {
+
+    #nav-menu {
+        font-size: 100%;
+        width: 74%;
+        padding-left: 15%;
+
+    }
+
+    #nav-barre-logo {
+        width: 100%;
+    }
+
+    #logo-site {
+        top: -205px;
+        right: -49px;
+        height: 30%;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .dp-none {
+        display: none;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+    #nav-menu {
+        font-size: 83%;
+        justify-content: space-between;
+    }
+
+    #nav-barre-logo {
+        width: 112%;
+    }
+
+    .img-burger {
+        top: -4px;
+        left: 50%;
+        width: 24%;
+        position: absolute;
+    }
+
+    #logo-site {
+        top: -205px;
+        right: -49px;
+        height: 30%;
+
+    }
+
+    #left-nav {
+        width: 61vw;
+
+    }
+}
+
+@media(max-width : 375px) {
+    #nav-menu {
+        font-size: 73%;
+        margin-left: -13%;
+        width: 98%;
+        gap: 4%;
+        justify-content: space-between;
+    }
+
+    .container {
+        padding-left: 7rem;
+    }
+
+    .img-burger {
+        top: 8px;
+        left: 38%;
+        height: 32%;
+        width: 34%;
+        position: absolute;
+    }
+
+    .menu-burger {
+        display: block;
+        width: 11%;
+    }
+
+    .dp-none {
+        display: none;
+    }
+
+    #nav-barre-logo {
+        width: 100%;
+    }
+
+    #logo-site {
+        top: -205px;
+        right: -49px;
+        height: 30%;
+    }
+
+    #left-nav {
+        display: none;
+    }
 }
