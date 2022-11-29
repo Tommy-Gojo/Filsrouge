@@ -19,19 +19,19 @@ class UserClass {
     }
 
     public function getId(){
-        return $this->id;
+        return htmlspecialchars($this->id);
     }
     public function getPseudo(){
-        return $this->pseudo;
+        return htmlspecialchars($this->pseudo);
     }
     public function getMail(){
-        return $this->mail;
+        return htmlspecialchars($this->mail);
     }
     public function getPassword(){
-        return $this->password;
+        return htmlspecialchars($this->password);
     }
     public function getRole(){
-        return $this->role;
+        return htmlspecialchars($this->role);
     }
 
     public function setId($id){

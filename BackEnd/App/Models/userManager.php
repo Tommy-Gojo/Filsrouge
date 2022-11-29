@@ -21,6 +21,20 @@ class UserManager extends Model{
             return null;
         }
     }
+    public function findMdp($mdp){
+        $sql = "SELECT * FROM users WHERE mdp_user = :mdp";
+        $stmt = $this->getBdd()->prepare($sql);
+        $stmt->execute([
+            ":mdp" => $mdp
+        ]);
+        $data = $stmt->fetch(\PDO::FETCH_OBJ);
+        if ($data) {
+            $mdp = new User($data->id,$data->pseudo,$data->mail,$data->password,$data->role);
+            return $mdp;
+        } else {
+            return null;
+        }
+    }
     public function findMail($mail) {
         $sql = "SELECT * FROM users WHERE mail_user = :mail";
         $stmt = $this->getBdd()->prepare($sql);
@@ -44,5 +58,17 @@ class UserManager extends Model{
             ":mdp"=>$Mdp
         ]);
     }
-    
+    // public function checkPass($Password) {
+    //     $sql = "SELECT * FROM users WHERE mdp_user = :mdp";
+    //     $stmt = $this->getBdd()->prepare($sql);
+    //     $stmt->execute([
+    //         ":mdp" => $Password
+    //     ]);
+    //     $data = $stmt->fetch(\PDO::FETCH_OBJ);
+    //     if ($data) {
+    //         return $data;
+    //     } else {
+    //         return null;
+    //     }
+    // }
 }

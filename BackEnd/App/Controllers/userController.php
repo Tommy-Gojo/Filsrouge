@@ -22,19 +22,23 @@ class UserController
 
     public function login()
     {
-        $user = $this->userManager->findUser($_POST['pseudo']);
-        if ($user) {
-            if (password_verify($_POST['password'], $user->getPassword())) {
-                $_SESSION['userConnected'] = $user->getPseudo();
-
-                header("location:" . URL);
-            } else {
-                echo "erreur mdp";
+        if(isset($_POST['pseudo'])){
+            $user = $this->userManager->findMail($_POST['email']);
+            if ($user){
+                    if (password_verify($_POST['password'], $user->getPassword())) {
+                        $_SESSION['userConnected'] = $user->getPseudo();
+                        $_SESSION['userRole'] = $user->getRole();
+                        header("Location: ".URL."connexion");
+                    } else {
+                    echo "erreur mdp";
+                    }
+                }else {
+                    return false;
+                }
+            }else{
+                echo "Le pseudo rentré n'est pas correcte";
             }
-        } else {
-            echo 'user n\'existe pas';
         }
-    }
 
     public function InscrUser()
     {
@@ -44,8 +48,19 @@ class UserController
             echo "user existant";
             
         } else {
-            $this->userManager->insertMail($_POST['pseudo'], $_POST['email'], $_POST['password']);
+            $hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+            $this->userManager->insertMail($_POST['pseudo'], $_POST['email'],$hash);
             echo "L'utilisateur a été crée";
         }
     }
+
+    public function logOut()
+    {
+        session_destroy();
+        unset($_SESSION['userConnected']);
+        header("Location: accueil");
+        exit;
+    }
 }
+
+    

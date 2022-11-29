@@ -29,15 +29,16 @@ try {
                 require_once "BackEnd/App/Views/connexionView.php";
                 $userController->login();
                 break;
-            case "soigner":
-                require_once "BackEnd/App/Views/search-m.php";
+            case "crud":
+                require_once "BackEnd/App/Views/crud.php";
                 break;
                 // var_dump($url[0]) ;
                 break;
             case "deconnexion":
-                // var_dump($url[0]) ;
+                // require_once "BackEnd/App/Views/Deconnexion.php";
+                $userController->logOut();
                 break;
-            case "Inscription":
+            case "inscription":
                 require_once "BackEnd/App/Views/inscriptionView.php";
                 break;
             case "ValiderInscription":

@@ -16,16 +16,23 @@
                     <!-- Drapeau pour la langue -->
                     <img src="FrontEnd/assets/img/union-europeenne.png" class="svg svg-flag" alt="">
                 </li>
+                <?php if(isset($_SESSION['userConnected'])){ ?>
+                    <?=$_SESSION['userConnected']?></p>
+
+                    <p>Vous êtes connecter</p>
+               <?php }else{ ?>
+                <a href="connexion" id="Deco">Se connecter</a>
                 <li class="svg-acc">
                     <!-- Svg Compte -->
-                    <img src="FrontEnd/assets/img/account_circle_FILL0_wght400_GRAD0_opsz48.svg" class="svg svg-user"alt="">
+                    <a href="http://localhost/filsrouge/connexion"><img src="FrontEnd/assets/img/account_circle_FILL0_wght400_GRAD0_opsz48.svg" class="svg svg-user"alt=""></a>
                     <div id="display-none displayNoneAnim"></div>
                     
                 </li>
+                <?php } ?>
+            
                 <li class="svg-basket">
                     <!-- Le Panier -->
                     <img src="FrontEnd/assets/img/shopping_basket_FILL0_wght400_GRAD0_opsz48.svg" class="svg" alt="">
-                    
                 </li>
             </ul>
         </nav>
@@ -64,7 +71,7 @@
                 <li><a href="">Travailler Avec Nous</a></li>
             </ul> 
             <div id="aside-deco">
-                <a href="">Se déconnecter </a>
+                <a href="deconnexion">Se déconnecter </a>
                 <a href="">Condition Génerale</a>
             </div>
         </aside>
@@ -72,6 +79,7 @@
         <?= $content ?> 
         </section>
     </main>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <script src="FrontEnd/assets/script.js"></script>
 </body>
 </html>

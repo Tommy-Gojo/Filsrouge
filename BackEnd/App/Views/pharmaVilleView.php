@@ -10,6 +10,15 @@
     </ul>
 </div>
 <div id="hr"></div>
+<?php
+    if(isset($_SESSION['userRole'])){
+        if(($_SESSION['userRole']) != 0){
+?> 
+<a href="crud"><button id="btn-crud">+</button></a>
+<?php
+    }
+}
+?>
 <article id="article-card">
     <div class="card">
         <div id="replay-like">
